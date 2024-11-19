@@ -1,3 +1,13 @@
+import '@/app/ui/global.css';
+import { inter } from '@/app/ui/fonts';
+import { lusitana } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Acme Dashboard',
+  description: 'The official Next.js Learn Dashboard built with App Router.',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}
+        {/* <p className={lusitana.className}>Try</p> */}
+      </body>
+      
     </html>
   );
 }
