@@ -7,8 +7,11 @@ import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
-  title: 'Acme Dashboard',
-  description: 'The official Next.js Learn Dashboard built with App Router.',
+  title: 'CAMS',
+  description: 'Cash Advance Management System.',
+  keywords: 'cash advance, management, system',
+  // image: '/logo.png',
+  
 };
 
 export default function RootLayout({
@@ -19,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>{children}
-        {/* <p className={lusitana.className}>Try</p> */}
         <SpeedInsights />
         <Analytics />
       </body>
